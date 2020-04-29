@@ -19,25 +19,25 @@ namespace Avp
         [Option('s', "search", HelpText = "Search parameters for Azure search", Required = false)]
         public string Search { get; set; }
 
-        [Option("searchFields", HelpText = "Search parameters for Azure search", Required = false)]
+        [Option("searchFields", HelpText = "Which fields to search", Required = false)]
         public string SearchFields { get; set; }
 
-        [Option('m', "searchMode", HelpText = "Search parameters for Azure search", Required = false, Default = "any")]
+        [Option('m', "searchMode", HelpText = "any | all. Only one search parameter needs to be found or all need to be found.", Required = false, Default = "any")]
         public string SearchMode { get; set; }
 
-        [Option('$', "select", HelpText = "Search parameters for Azure search", Required = false)]
+        [Option('$', "select", HelpText = "Which fields to return for search results.", Required = false)]
         public string Select { get; set; }
 
-        [Option('k', "skip", HelpText = "Skip this many search results", Required = false)]
+        [Option('k', "skip", HelpText = "Skip this many search results.", Required = false)]
         public int? Skip { get; set; }
 
-        [Option('t', "top", HelpText = "Search parameters for Azure search", Required = false)]
+        [Option('t', "top", HelpText = "Take this many results per page.", Required = false)]
         public int? Top { get; set; }
 
-        [Option("fetch", HelpText = "Search parameters for Azure search", Required = false)]
+        [Option("fetch", HelpText = "Fetch full notice bodies from api.", Required = false)]
         public bool FetchNoticeBodies { get; set; }
 
-        [Option("configuration", HelpText = "Search parameters for Azure search", Required = false, Default = "configuration.json")]
+        [Option("configuration", HelpText = "Configuration file to use. Can maintain multiple environments with different configs.", Required = false, Default = "configuration.json")]
         public string ConfigurationFile { get; set; }
     }
 }
