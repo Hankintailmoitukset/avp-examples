@@ -1,0 +1,5 @@
+﻿{
+  "ApiKey": "your-api-key",
+  "SearchEndpoint": "https://api.hankintailmoitukset.fi/avp/notices/docs/search",
+  "FetchEndpoint": "https://api.hankintailmoitukset.fi/avp-notice/api/avp/notices/"
+}
